@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- We create the parent container to house every content -->
+    
+    <div class="parent-container">
+        <div class="form-container">
+            <form action="" id="myForm">
+            <div class="contact">
+                <h4>Contact Us</h4>
+            </div>
+            <div class="input-names">
+                <div class="first">
+                First Name *
+                <p><label for=""><input type="text" id="firstName"></label></p>
+            </div>
+                <div class="last">
+                Last Name *
+                <p><label for=""><input type="text" id="lastName"></label></p>
+            </div>
+                
+            </div>
+            <div class="input-email">
+                Email Address *
+                <p><label><input type="email" id="email"></label></p>
+            </div>
+            <div class="input-query">
+                Query Type *
+                <p><label class="radio-option">
+                    <input type="radio" name="query" value="general" id="general">
+                General Enquiry
+            </label>
+
+            <label class="radio-option">
+                <input type="radio" name="query" value="support" id="support">
+            Support Request
+        </label>
+            </p>
+                
+            </div>
+            <div class="message">
+                Message *
+                <p><label>
+                    <textarea name="message" id="text" value="message"></textarea>
+                </label></p>
+            </div>
+            <div class="checkbox">
+                
+                    <input type="checkbox" id="agree">
+                    <label for="agree"> I consent to being contacted by the team *
+                </label>
+            </div>
+            <div class="submit">
+                <button id="sub">Submit</button>
+            </div>
+        </form>
+        <div>
+            <p id="output"></p>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

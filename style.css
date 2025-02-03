@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-container {
+    background: #ddefeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+
+.form-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.input-names input{
+    padding: 5.25px;
+    width: 200px;
+    border-radius: 5px;
+    border: .5px solid #ccc;
+    
+}
+
+.first {
+    display: inline-block;
+    margin: 3px;
+    
+}
+
+.last {
+    display: inline-block;
+    
+}
+
+.input-email input {
+    width: 100%;
+    padding: 5.25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: .5px solid #ccc;
+}
+.input-query p{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+    
+}
+.radio-option {
+    display: flex;
+    align-items: center;
+    border: .5px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    gap: 5px;
+    flex: 1;
+}
+
+.message textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    border: .5px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+/* .checkbox input {
+    margin: 0 10px 25px 0;
+    
+} */
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-left: -5px;
+}
+
+.submit button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    background: #117864;
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+/* For smaller screens */
+
+@media only screen and (max-width: 640px) {
+    
+    .form-container{
+        width: 90%;
+        margin: 0 auto;
+        
+        
+    
+
+    }
+    .input-names{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input-names input{
+        width: 100%;
+    }
+    /* .input-email{
+        display: flex;
+        flex-direction: column;
+        
+    } */
+    .input-email input {
+        width: 100%;
+    }
+    .input-query p{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .radio-option{
+        width: 100%;
+    }
+    .message textarea{
+        width: 100%;
+        
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+    }
+    .submit button {
+        width: 100%;
+    }
+}
